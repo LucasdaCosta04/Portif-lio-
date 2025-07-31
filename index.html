@@ -1,0 +1,100 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portif-lio- • Lucas da Costa</title>
+  <meta name="description" content="Portfólio interativo de Lucas da Costa, estudante de Ciência da Computação com foco em desenvolvimento e inovação.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="script.js"></script>
+  <script defer src="projetos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div id="loading">Carregando...</div>
+
+  <div class="background"></div>
+
+  <header>
+    <div class="logo">Portif-lio-</div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#destaques">Destaques</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="content" style="display: none;">
+    <section class="intro">
+      <h1>Lucas da Costa</h1>
+      <p>Estudante de Ciência da Computação • Desenvolvedor em formação</p>
+      <a class="btn" href="Curriculo_Lucas_da_costa.pdf" download>📄 Baixar Currículo</a>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou estudante de Ciência da Computação pela UNISUL, apaixonado por tecnologia, criatividade e inovação. Busco oportunidades como estagiário na área de TI, com foco em programação, desenvolvimento web e projetos interativos.</p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Habilidades Técnicas</h2>
+      <ul>
+        <li>Java, HTML, CSS, JavaScript</li>
+        <li>Godot, Figma, Cisco Packet Tracer</li>
+        <li>Linux, UML, Segurança da Informação</li>
+        <li>Edição de vídeo, Marketing Digital</li>
+      </ul>
+    </section>
+
+    <section class="destaques" id="destaques">
+      <h2>🧩 Projetos em Destaque</h2>
+      <div class="destaque-cards">
+        <div class="card">
+          <h3>Projeto 1S - PSC</h3>
+          <p>Sistema em Java feito em equipe para controle de empréstimos.</p>
+          <a href="https://github.com/LucasdaCosta04/Projeto-1S-PSC" target="_blank">🔗 Ver no GitHub</a>
+        </div>
+        <div class="card">
+          <h3>NutriLife</h3>
+          <p>Plataforma de bem-estar e nutrição com arquitetura de software moderna.</p>
+          <a href="https://github.com/carloshlohn/NutriLife-model" target="_blank">🔗 Ver no GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2>Projetos</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn" id="prev">←</button>
+        <div class="carousel" id="carousel"></div>
+        <button class="carousel-btn" id="next">→</button>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Contato</h2>
+      <form action="https://formspree.io/f/xovllwnn" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="message" rows="5" placeholder="Sua mensagem..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="icons">
+        <a href="mailto:lucas.costa15gl@gmail.com"><i class="ph ph-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/lucasdacosta04/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="https://github.com/LucasdaCosta04" target="_blank"><i class="ph ph-github-logo"></i></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Lucas da Costa</p>
+    </footer>
+  </main>
+</body>
+</html>
