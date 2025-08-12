@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background-color: #facc15; border-radius: 9999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Small utility for animated buttons (used across components) */
+.btn-animated {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.btn-animated:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
