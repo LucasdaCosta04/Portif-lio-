@@ -18,6 +18,7 @@ function SocialSidebar() {
       <a href="https://github.com/LucasdaCosta04" target="_blank" rel="noreferrer" className="text-gray-800 dark:text-white">
         <FaGithub size={22} />
       </a>
+
     </motion.aside>
   );
 }
