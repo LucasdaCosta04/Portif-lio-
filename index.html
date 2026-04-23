@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucas da Costa · Desenvolvedor Full Stack</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grid-overlay"></div>
+<div class="scanlines"></div>
+<div id="cursor-glow"></div>
+
+<nav>
+  <a class="nav-logo" href="#hero"><div class="nav-dot"></div>Lucas.Costa</a>
+  <ul class="nav-links">
+    <li><a href="#sobre"       data-num="01">Sobre</a></li>
+    <li><a href="#experiencia" data-num="02">Experiência</a></li>
+    <li><a href="#skills"      data-num="03">Skills</a></li>
+    <li><a href="#projetos"    data-num="04">Projetos</a></li>
+    <li><a href="#certs"       data-num="05">Cursos</a></li>
+    <li><a href="#contato"     data-num="06">Contato</a></li>
+  </ul>
+  <a class="nav-cta" href="#contato"><span>Fale comigo</span></a>
+</nav>
+
+<section id="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="hero-left">
+    <div class="hero-badge"><span class="badge-dot"></span>Iniciando carreira · Aberto a oportunidades</div>
+    <h1>
+      <span class="name">Lucas da Costa</span>
+      <span class="role">Full Stack Dev</span>
+      <span class="sub">// Java · React · HTML/CSS · MySQL</span>
+    </h1>
+    <p class="hero-desc">Estudante de Ciência da Computação com foco em desenvolvimento de software e automação. Construo soluções do back-end ao front-end, com experiência prática em Java, React e infraestrutura de redes.</p>
+    <div class="hero-btns">
+      <a href="#projetos" class="btn-primary">Ver projetos <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#contato" class="btn-outline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Contato</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="terminal">
+      <div class="t-bar">
+        <div class="t-dot r"></div><div class="t-dot y"></div><div class="t-dot g"></div>
+        <div class="t-title">lucas@portfolio ~ perfil.js</div>
+      </div>
+      <div class="t-body">
+        <div class="tl"><span class="tp">❯</span><span class="tc">node perfil.js</span></div>
+        <div class="tl"><span class="to tcm">// Carregando dados...</span></div>
+        <div class="tb"></div>
+        <div class="tl"><span class="to"><span class="tk">const</span> dev = {</span></div>
+        <div class="tl"><span class="to">&nbsp;&nbsp;nome: <span class="ts">"Lucas da Costa"</span>,</span></div>
+        <div class="tl"><span class="to">&nbsp;&nbsp;curso: <span class="ts">"Ciência da Computação"</span>,</span></div>
+        <div class="tl"><span class="to">&nbsp;&nbsp;univ: <span class="ts">"Unisul"</span>, conclusao: <span class="tn">2027</span>,</span></div>
+        <div class="tl"><span class="to">&nbsp;&nbsp;stack: [<span class="ts">"Java"</span>, <span class="ts">"React"</span>, <span class="ts">"MySQL"</span>],</span></div>
+        <div class="tl"><span class="to">&nbsp;&nbsp;atual: <span class="ts">"Parkseg — Suporte e Automação"</span>,</span></div>
+        <div class="tl"><span class="to">&nbsp;&nbsp;cidade: <span class="ts">"Santo Amaro da Imperatriz, SC"</span>,</span></div>
+        <div class="tl"><span class="to">&nbsp;&nbsp;disponivel: <span class="tv">true</span>,</span></div>
+        <div class="tl"><span class="to">};</span></div>
+        <div class="tb"></div>
+        <div class="tl"><span class="to tcm">// Pronto para novos desafios ✓</span></div>
+        <div class="tl"><span class="tp">❯</span><span class="tc"> <span class="cursor-blink"></span></span></div>
+      </div>
+      <div class="t-stats">
+        <div class="tstat"><div class="tstat-n">5+</div><div class="tstat-l">Projetos</div></div>
+        <div class="tstat"><div class="tstat-n">2027</div><div class="tstat-l">Formatura</div></div>
+        <div class="tstat"><div class="tstat-n">SC</div><div class="tstat-l">Brasil</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span class="scroll-txt">scroll</span></div>
+</section>
+
+<section id="sobre">
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="sec-tag">01 — Sobre mim</div>
+      <h2 class="sec-title">Construindo minha <span class="grad">trajetória</span> em tech.</h2>
+      <div class="about-banner"><span class="ab-icon">🎓</span><span class="ab-text">Estudante de Ciência da Computação na Unisul (Pedra Branca) · Conclusão prevista: 2027 · Dando os primeiros passos na área e em busca de crescimento profissional.</span></div>
+      <p class="about-p">Sou <strong>Lucas da Costa</strong>, de Santo Amaro da Imperatriz, SC. Tenho foco em <strong>desenvolvimento de software e automação</strong>, com experiência prática em Java, React, HTML/CSS/JS e MySQL.</p>
+      <p class="about-p">Atuo na <strong>Parkseg</strong> no setor de Controle de Acesso e Segurança Eletrônica, onde idealizei e desenvolvi um projeto de automação da fila de chamados com dashboard Kanban e integração via API.</p>
+      <p class="about-p">Tenho perfil curioso e dedicado, com interesse em tecnologias emergentes como IA e automação. Busco minha primeira oportunidade formal como desenvolvedor para crescer e contribuir com equipes de tecnologia.</p>
+      <br>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem">
+        <a href="Curriculo.pdf" download class="btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Baixar Currículo</a>
+        <a href="https://www.linkedin.com/in/lucasdacosta-dev/" target="_blank" class="btn-outline">LinkedIn →</a>
+      </div>
+    </div>
+    <div class="about-stats reveal">
+      <div class="astat tilt-card"><div class="astat-n">5+</div><div class="astat-l">Projetos entregues</div></div>
+      <div class="astat tilt-card"><div class="astat-n">2026</div><div class="astat-l">Na Parkseg</div></div>
+      <div class="astat tilt-card"><div class="astat-n">3</div><div class="astat-l">Exp. acadêmicas</div></div>
+      <div class="astat tilt-card"><div class="astat-n">6+</div><div class="astat-l">Certificações</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiencia">
+  <div class="sec-tag reveal">02 — Experiência</div>
+  <h2 class="sec-title reveal">Trajetória <span class="grad">profissional.</span></h2>
+  <p class="sec-sub reveal">Experiências que moldaram meu perfil técnico e profissional.</p>
+  <div class="exp-timeline">
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-date">Fev 2026 — Atual</div><div class="exp-org">Parkseg</div></div>
+      <div class="exp-dot"></div>
+      <div class="exp-body tilt-card">
+        <div class="exp-type">💼 Profissional</div>
+        <div class="exp-role">Suporte Técnico e Automação de Processos</div>
+        <ul class="exp-list">
+          <li>Atuação no setor de Controle de Acesso e Segurança Eletrônica com suporte técnico em sistemas de alarme e dispositivos de autenticação.</li>
+          <li>Idealização e desenvolvimento de projeto de automação da fila de chamados com dashboard Kanban para priorização de tickets.</li>
+          <li>Integração de dados via API (Movidesk e uTech) para visualização de métricas de desempenho do setor.</li>
+          <li>Aplicação de protocolos de rede e ferramentas Hikvision para integração de dispositivos de segurança.</li>
+        </ul>
+        <div class="exp-techs"><span class="exp-tag">API Integration</span><span class="exp-tag">Automação</span><span class="exp-tag">Hikvision</span><span class="exp-tag">Redes</span><span class="exp-tag">Kanban</span></div>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-date">Ago 2025</div><div class="exp-org">Unisul</div></div>
+      <div class="exp-dot"></div>
+      <div class="exp-body tilt-card">
+        <div class="exp-type">🎓 Acadêmico</div>
+        <div class="exp-role">Analista de Infraestrutura de Redes</div>
+        <ul class="exp-list">
+          <li>Segmentação de rede por VLANs e configuração de roteamento inter-VLAN.</li>
+          <li>Implantação de servidores dedicados: DHCP, DNS, Web e Arquivos.</li>
+          <li>Adoção de políticas de segurança e documentação técnica completa.</li>
+        </ul>
+        <div class="exp-techs"><span class="exp-tag">VLANs</span><span class="exp-tag">Roteamento Inter-VLAN</span><span class="exp-tag">DHCP</span><span class="exp-tag">DNS</span><span class="exp-tag">Cisco Packet Tracer</span></div>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-date">Jun 2025</div><div class="exp-org">Unisul</div></div>
+      <div class="exp-dot"></div>
+      <div class="exp-body tilt-card">
+        <div class="exp-type">🎓 Acadêmico</div>
+        <div class="exp-role">Desenvolvedor Front-end e Back-end — NutriLife</div>
+        <ul class="exp-list">
+          <li>Criação das funções de cálculo e estrutura da página de treinos.</li>
+          <li>Desenvolvimento com HTML, CSS, JavaScript e React.</li>
+        </ul>
+        <div class="exp-techs"><span class="exp-tag">React</span><span class="exp-tag">JavaScript</span><span class="exp-tag">HTML</span><span class="exp-tag">CSS</span></div>
+      </div>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-meta"><div class="exp-date">Mai — Jun 2024</div><div class="exp-org">Unisul</div></div>
+      <div class="exp-dot"></div>
+      <div class="exp-body tilt-card">
+        <div class="exp-type">🎓 Acadêmico</div>
+        <div class="exp-role">Desenvolvedor Back-end — Sistema de Empréstimo</div>
+        <ul class="exp-list">
+          <li>Organização do projeto e idealização de métodos e aplicações em MySQL.</li>
+          <li>Criação das funções do sistema de empréstimo de ferramentas.</li>
+        </ul>
+        <div class="exp-techs"><span class="exp-tag">Java</span><span class="exp-tag">MySQL</span><span class="exp-tag">Lógica de Programação</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="sec-tag reveal">03 — Habilidades</div>
+  <h2 class="sec-title reveal">Stack <span class="grad">técnico.</span></h2>
+  <p class="sec-sub reveal">Tecnologias que uso e estudo ativamente.</p>
+  <div class="skills-grid">
+    <div class="sk-card tilt-card reveal"><div class="sk-head"><div class="sk-icon">🌐</div><div class="sk-name">Front-end</div></div><div class="sk-tags"><span class="sk-tag">HTML5</span><span class="sk-tag">CSS3</span><span class="sk-tag">JavaScript</span><span class="sk-tag">React</span></div></div>
+    <div class="sk-card tilt-card reveal"><div class="sk-head"><div class="sk-icon">☕</div><div class="sk-name">Back-end</div></div><div class="sk-tags"><span class="sk-tag">Java</span><span class="sk-tag">Lógica de Programação</span></div></div>
+    <div class="sk-card tilt-card reveal"><div class="sk-head"><div class="sk-icon">🗄️</div><div class="sk-name">Banco de Dados</div></div><div class="sk-tags"><span class="sk-tag">MySQL</span><span class="sk-tag">Modelagem de Dados</span><span class="sk-tag">SQL</span></div></div>
+    <div class="sk-card tilt-card reveal"><div class="sk-head"><div class="sk-icon">🔗</div><div class="sk-name">Redes</div></div><div class="sk-tags"><span class="sk-tag">Redes de Computadores</span><span class="sk-tag">VLANs</span><span class="sk-tag">Roteamento Inter-VLAN</span><span class="sk-tag">DHCP e DNS</span><span class="sk-tag">Cisco Packet Tracer</span></div></div>
+    <div class="sk-card tilt-card reveal"><div class="sk-head"><div class="sk-icon">🛠️</div><div class="sk-name">Ferramentas</div></div><div class="sk-tags"><span class="sk-tag">Git</span><span class="sk-tag">GitHub</span><span class="sk-tag">Hikvision</span><span class="sk-tag">Movidesk API</span></div></div>
+    <div class="sk-card tilt-card reveal"><div class="sk-head"><div class="sk-icon">📚</div><div class="sk-name">Em aprendizado</div></div><div class="sk-tags"><span class="sk-tag">Spring Boot</span><span class="sk-tag">Node.js</span><span class="sk-tag">Python</span><span class="sk-tag">Docker</span><span class="sk-tag">Inglês</span></div></div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="proj-head">
+    <div>
+      <div class="sec-tag reveal">04 — Portfólio</div>
+      <h2 class="sec-title reveal">Projetos em <span class="grad">destaque.</span></h2>
+    </div>
+    <a href="https://github.com/LucasdaCosta04" target="_blank" class="btn-outline reveal">Ver GitHub →</a>
+  </div>
+  <div class="proj-grid">
+    <a class="proj-card feat tilt-card reveal" href="https://github.com/LucasdaCosta04/NutriLife-model" target="_blank">
+      <div class="proj-top"><div class="proj-icon">🥗</div><div class="proj-arrow">↗</div></div>
+      <div class="proj-name">NutriLife</div>
+      <div class="proj-desc">Plataforma de nutrição e saúde desenvolvida academicamente na Unisul. Responsável pelas funções de cálculo e pela estrutura da página de treinos. Front-end com React, JavaScript, HTML e CSS.</div>
+      <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">JavaScript</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span></div>
+    </a>
+    <a class="proj-card tilt-card reveal" href="https://github.com/LucasdaCosta04/Sistema-de-emprestimo-de-ferramentas" target="_blank">
+      <div class="proj-top"><div class="proj-icon">🔧</div><div class="proj-arrow">↗</div></div>
+      <div class="proj-name">Empréstimo de Ferramentas</div>
+      <div class="proj-desc">Sistema back-end de controle de empréstimo e devolução de ferramentas. Modelagem e funções em MySQL com Java.</div>
+      <div class="proj-tags"><span class="proj-tag">Java</span><span class="proj-tag">MySQL</span></div>
+    </a>
+    <a class="proj-card tilt-card reveal" href="https://github.com/LucasdaCosta04/Projeto_InfraDeRedes" target="_blank">
+      <div class="proj-top"><div class="proj-icon">🌐</div><div class="proj-arrow">↗</div></div>
+      <div class="proj-name">Infra de Redes</div>
+      <div class="proj-desc">Projeto completo de infraestrutura de rede: VLANs, roteamento inter-VLAN, servidores DHCP/DNS/Web e políticas de segurança.</div>
+      <div class="proj-tags"><span class="proj-tag">VLANs</span><span class="proj-tag">Cisco Packet Tracer</span><span class="proj-tag">DHCP/DNS</span></div>
+    </a>
+    <a class="proj-card tilt-card reveal" href="https://github.com/LucasdaCosta04/Sistema_de_estoque-Backend" target="_blank">
+      <div class="proj-top"><div class="proj-icon">📦</div><div class="proj-arrow">↗</div></div>
+      <div class="proj-name">Sistema de Estoque — Back-end</div>
+      <div class="proj-desc">API de gestão de estoque com operações CRUD e controle de produtos. Projeto de aprendizado com Java e MySQL.</div>
+      <div class="proj-tags"><span class="proj-tag">Java</span><span class="proj-tag">MySQL</span></div>
+    </a>
+    <a class="proj-card tilt-card reveal" href="https://github.com/LucasdaCosta04/Sistema-de-estoque-Frontend" target="_blank">
+      <div class="proj-top"><div class="proj-icon">🖥️</div><div class="proj-arrow">↗</div></div>
+      <div class="proj-name">Sistema de Estoque — Front-end</div>
+      <div class="proj-desc">Interface web para o sistema de estoque. Dashboard para visualização e gestão de produtos, desenvolvido com React.</div>
+      <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">JavaScript</span><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span></div>
+    </a>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="sec-tag reveal">05 — Formação complementar</div>
+  <h2 class="sec-title reveal">Cursos e <span class="grad">Certificações.</span></h2>
+  <p class="sec-sub reveal">Aprendizado contínuo fora da sala de aula.</p>
+  <div class="certs-grid">
+    <div class="cert-card tilt-card reveal"><span class="cert-year">2025</span><div><div class="cert-name">Endereçamento IPv4</div><div class="cert-org">Curso em Vídeo</div></div></div>
+    <div class="cert-card tilt-card reveal"><span class="cert-year">2025</span><div><div class="cert-name">Git e GitHub</div><div class="cert-org">Curso em Vídeo</div></div></div>
+    <div class="cert-card tilt-card reveal"><span class="cert-year">2025</span><div><div class="cert-name">Jornada do Emprego</div><div class="cert-org">Curso em Vídeo</div></div></div>
+    <div class="cert-card tilt-card reveal"><span class="cert-year">2024</span><div><div class="cert-name">Algoritmos</div><div class="cert-org">Curso em Vídeo</div></div></div>
+    <div class="cert-card tilt-card reveal"><span class="cert-year">2024</span><div><div class="cert-name">Cultura Digital</div><div class="cert-org">Fundação Bradesco</div></div></div>
+    <div class="cert-card tilt-card reveal"><span class="cert-year">2019</span><div><div class="cert-name">Fundamentos de TI — Hardware e Software</div><div class="cert-org">Fundação Bradesco</div></div></div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="contact-grid">
+    <div class="reveal">
+      <div class="sec-tag">06 — Contato</div>
+      <h2 class="sec-title">Vamos <span class="grad">conversar?</span></h2>
+      <p class="contact-desc">Estou em busca da minha primeira oportunidade como desenvolvedor. Se você tem um projeto, vaga ou quer trocar uma ideia sobre tecnologia, me manda uma mensagem!</p>
+      <div class="clinks">
+        <a href="mailto:lucas.costa15gl@gmail.com" class="clink tilt-card"><div class="clink-icon">✉️</div><div><div class="clink-lbl">E-mail</div><div class="clink-val">lucas.costa15gl@gmail.com</div></div></a>
+        <a href="https://www.linkedin.com/in/lucasdacosta-dev/" target="_blank" class="clink tilt-card"><div class="clink-icon">💼</div><div><div class="clink-lbl">LinkedIn</div><div class="clink-val">lucasdacosta-dev</div></div></a>
+        <a href="https://github.com/LucasdaCosta04" target="_blank" class="clink tilt-card"><div class="clink-icon">🐙</div><div><div class="clink-lbl">GitHub</div><div class="clink-val">LucasdaCosta04</div></div></a>
+      </div>
+    </div>
+    <div class="reveal">
+      <form class="contact-form" onsubmit="handleForm(event)">
+        <div class="f-row">
+          <div class="f-group"><label>Nome</label><input type="text" id="nome" placeholder="Seu nome" required/></div>
+          <div class="f-group"><label>E-mail</label><input type="email" placeholder="seu@email.com" required/></div>
+        </div>
+        <div class="f-group"><label>Assunto</label><input type="text" id="assunto" placeholder="Vaga, projeto, parceria..." required/></div>
+        <div class="f-group"><label>Mensagem</label><textarea id="msg" placeholder="Descreva sua proposta ou ideia..." required></textarea></div>
+        <div class="f-submit"><button type="submit" class="btn-primary">Enviar mensagem <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button></div>
+        <div id="form-ok" style="display:none;color:#a855f7;font-family:'JetBrains Mono',monospace;font-size:.74rem;text-align:right;margin-top:.5rem;">✓ Mensagem enviada com sucesso!</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft">© 2026 Lucas da Costa · Santo Amaro da Imperatriz, SC · <span>{ status: "open_to_work" }</span></div>
+  <div class="ft-links">
+    <a href="https://github.com/LucasdaCosta04" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/lucasdacosta-dev/" target="_blank">LinkedIn</a>
+    <a href="mailto:lucas.costa15gl@gmail.com">E-mail</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
